@@ -114,42 +114,38 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 ### Step 1:
 
-    Open Quartus II and select new project and choose the file location.
+Open Quartus II and select new project and choose the file location.
 
 ### Step 2:
 
-    Module Declaration. Module should have the file name.
+Module Declaration. Module should have the file name.
     
 ### Step 3:
 
-    Declare Inputs and outputs.
+Declare Inputs and outputs.
 
 ### Step 4:
 
-    Use assign declaration and wire to define the functionality of logic circuits.
+Use assign declaration and wire to define the functionality of logic circuits.
     
 ### Step 5:
 
-    End the program with endmodule.
+End the program with endmodule.
     
 ### Step 6:
 
-    Run the program and choose RTL viewer to get RTL realization.
+Run the program and choose RTL viewer to get RTL realization.
 
 ## PROGRAM: 
 
-
-
 Program for flipflops and verify its truth table in quartus using Verilog programming.
-Developed by: Mohammed Faizal.J
-Register Number: 212222100027
 
+Developed by: Tejaswini.G
 
-
-
-
+Register Number: 212222230157
 
 ## SR flip flop:
+```python
 vhdl
 module exp_5a(s,r,clk,q,qbar);
 input s,r,clk;
@@ -161,10 +157,9 @@ q<=s|(~r&q);
 qbar<=r|(~s&~q);
 end
 endmodule
-
-
-
+```
 ## JK flip flop:
+```python
 vhdl
 module exp_5b(j,k,clk,q,qbar);
 input j,k,clk;
@@ -176,10 +171,10 @@ q<=(j&~q)|(~k&q);
 qbar<=~q;
 end 
 endmodule
-
+```
 
 ## T flip flop:
-vhdl
+```python
 module exp_5c(clk,T,q,qbar);
 input clk,T;
 output q,qbar;
@@ -190,10 +185,10 @@ q<=(T&~q)|(~T&q);
 qbar<=~q;
 end 
 endmodule
-
+```
 
 ## D flip flop:
-vhdl
+```python
 module exp_5d(d,clk,q,qbar);
 input d,clk;
 output q,qbar;
@@ -204,9 +199,7 @@ q<=d;
 qbar<=~q;
 end 
 endmodule
-
-
-
+```
 ### OUTPUT :
 
 ### RTL LOGIC FOR FLIP FLOPS :
